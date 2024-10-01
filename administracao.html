@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="administracao.html">Cadastro de Clientes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de Cadastro</h2>
+            <form id="clienteForm">
+                <label for="CPF">CPF:</label>
+                <input type="text" id="CPF" name="CPF" required>
+
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome" required>
+                
+                <label for="DataNascimento">Data de Nascimento:</label>
+                <input type="date" id="DataNascimento" name="DataNascimento" required>
+                
+                <label for="Genero">Gênero:</label>
+                <select id="Genero" name="Genero" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+
+                <label for="Email">E-mail:</label>
+                <input type="Email" id="Email" name="Email" required>
+
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" id="Telefone" name="Telefone" required>
+
+                <label for="Endereço">Endereço:</label>
+                <input type="text" id="Endereço" name="Endereço" required>
+
+                <label for="DataCadastro">Data de Cadastro:</label>
+                <input type="date" id="DataCadastro" name="DataCadastro" required>
+
+
+                <label for="fidelidade">Fidelidade:</label>
+                <select id="fidelidade" name="fidelidade" required>
+                    <option value="Sim">Sim</option>
+                    <option value="Nao">Não</option>
+                </select>
+
+                <label for="Atendimento">Preferência de Atendimento:</label>
+                <select id="Atendimento" name="Atendimento" required>
+                    <option value="Email">Email</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="SMS">SMS</option>
+                </select>
+
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Clientes</h2>
+            <div class="table-responsive">
+                <table id="clienteTable">
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th>Data Nasc.</th>
+                            <th>Gênero</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Endereço</th>
+                            <th>Data de Cadastro</th>
+                            <th>Fidelidade</th>
+                            <th>Atendimento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Lista será gerada dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Cadastro de Clientes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
